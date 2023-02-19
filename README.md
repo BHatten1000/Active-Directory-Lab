@@ -28,6 +28,19 @@ This project consists of Creating a virtual environment that runs Active Directo
 <p align="center">
 Spin up a VM using virtualbox to act as our Domain Controller: <br/>
 <img src="https://i.imgur.com/Kr5aMSy.png" height="80%" width="80%" alt="Virtual Box Screenshot"/>
+ 
+ - Utilize an ISO for Server 2019 or whatever is used at your organization.
+ - Be sure to setup two NICs. One running NAT and the other for the internal network.
+ - Select either of the Desktop Experience options and proceed through the installation wizard & set up your Admin account
+ 
+ <p align="center">
+Windows Setup: <br/>
+<img src="https://i.imgur.com/kO44dfo.png height="80%" width="80%" alt="Windows Setup Wizard"/>
+
+
+ <p align="center">
+<img src="https://i.imgur.com/8bpidBh.jpg height="80%" width="80%" alt="Windows Setup Wizard"/>                                                                                             
+                                                                                                                                                         
 <br />
 <br />
 Select the disk:  <br/>
