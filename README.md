@@ -43,12 +43,34 @@ Windows Setup: <br/>
                                                                                                                                                          
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Name and Configure Network Adapters:  <br/>
+<img src="https://i.imgur.com/eaQchnK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+  - Name your NICs for ease of use.
+  - Configure the one facing the "Internet" to use DHCP
+  - Configure the internal NIC with its own static IP and subnet mask. This machine is our "default gateway" so in the DNS field enter the loopback address of 127.0.0.1 as seen below:
+  
+  <p align="center">
+<img src="https://i.imgur.com/RX9wJVg.png" height="80%" width="80%" alt="Windows Setup Wizard"/>
+
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Install Active Directory Domain Services (ADDS): <br/>
+<img src="https://i.imgur.com/y66oisa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   
+   - Launch Server Manager and select 'Add roles and features'; Proceed through the menu, selecting the Domain Controller and selecting 'Active Directory Domain Services'
+   <p align="center">
+ <img src="https://i.imgur.com/pZ4Mkm3.png" height="80%" width="80%"
+      
+   - Once the role has been installed select the caution icon in Server Manager and promote the server to a domain controller.
+   - In the following menu select 'Add a new forest' and proceed to name your domain. Proceed by hitting 'Next' and finally 'Install' Your DC will reboot.
+    
+   <p align="center">
+ <img src="https://i.imgur.com/4Trxrvy.png" height="80%" width="80%"
+      
+   <p align="center">
+ <img src="https://i.imgur.com/wXFlsuY.png" height="80%" width="80%"
+ 
 <br />
 <br />
 Confirm your selection:  <br/>
