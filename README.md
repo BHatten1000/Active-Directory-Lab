@@ -73,8 +73,13 @@ Install Active Directory Domain Services (ADDS): <br/>
  
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create your Domain Admin Account:  <br/>
+<img src="https://i.imgur.com/SIZoCcK.png" height="80%" width="80%" alt="Create Domain Admin"/>
+    
+   - Launch AD Users and Computers and create an OU for Admins.
+   - Within that OU create your Domain Admin account and make it a member of the "Domain Admins" default group.
+   - Logout and then login wiith your Domain Admin credentials.
+    
 <br />
 <br />
 Wait for process to complete (may take some time):  <br/>
