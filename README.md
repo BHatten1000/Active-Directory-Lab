@@ -82,7 +82,20 @@ Create your Domain Admin Account:  <br/>
     
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
+
+   <p align="center">
+Configure Remote Access Server and Network Address Translation: <br/>
+<img src="https://i.imgur.com/9IT5RHh.png" width="80%" alt="Windows Setup Wizard"/>  
+
+  - In Server Manager select 'Tools', 'Routing and Remote Access', and then right click on your DC and 'Configure and Enable'
+  - Continue by hitting 'Next' and select 'Network Address Translation' this will enable our client or user machines to connect to the internet through the DC's IP.
+  - When prompted select your internet facing network adapter and select 'Finish'    
+    
+   <p align="center">
+ Completed RAS & NAT Configuration: <br/>   
+ <img src="https://i.imgur.com/9R91Xvp.png" height="80%" width="80%"
+
+
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
