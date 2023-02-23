@@ -3,7 +3,7 @@
  ### [Preview Screenshots]
 
 <p align="center">
-The script that was utilized: <br/>
+The script that was utilized to create users: <br/>
 <img src="https://i.imgur.com/l3ojy6T.png" height="80%" width="80%" alt="Screenshot_of_Script"/>
 <br />
 <br />
