@@ -96,17 +96,47 @@ Configure Remote Access Server and Network Address Translation: <br/>
  <img src="https://i.imgur.com/9R91Xvp.png" height="80%" width="80%"
 
 
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Setup DHCP on Domain Controller(to give client machines IP addresses):  <br/>
+<img src="https://i.imgur.com/6R4b85W.png" height="80%" width="80%"/>
+    
+   - Return to Server Manager and select 'Add Roles and Features'. 
+   - Select your DC, proceed with 'Next' and select 'DHCP' and 'Add Role'.
+   - After a short wait your DHCP role will finish installing but still needs a scope. 
+   - Return to the 'Tools' menu and select 'DHCP' 
+   - In the DHCP configuration menu right click on 'IPv4' and select 'New Scope' then name and define your scope. These IP addresses represent the available addresses for any host machines that you add to your test enviornment in the future.
+   - Define exlusions (if you have any) and lease duration
+    
+ <img src="https://i.imgur.com/eLK8ZMi.png" height="80%" width="80%"/>
+    
+ <img src="https://i.imgur.com/tTSG2oD.png" height="80%" width="80%"/>
+    
+   - When prompted select 'Yes, I want to configure these options now' and proceed to specify the default gateway (in our case this is the DC's IP address), DNS servers, and Domain name as shown below:
+    
+ <img src="https://i.imgur.com/4CmGcpr.png" height="80%" width="80%"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
+    
+   <p align="center">
+Finally, Powershell to create 1000 users: <br/>
+     
+   - Modify the script located [here](https://github.com/BHatten1000/Active-Directory-Lab/blob/main/Generate-Names-Create-Users) to your use case. You may want to change the default password or increase or reduce the number of Users. (The script will create a new OU called _Users and generate a number of users within it. It will also create usernames in FLast format. Finally it will and apply the plain text password to ALL of them to build out a userbase for our AD lab.)
+    
+   - Remember to download the txt file of randomly generated names located [here](https://github.com/BHatten1000/Active-Directory-Lab/blob/main/names.txt) or utilize a file of your own in the same format called names.txt 
+    
+   - After configuring and running the script linked above (from the directory that names.txt is stored in) you should have a large userbase to experiment with:
+
+ <img src="https://i.imgur.com/bGL1VLn.png" height="80%" width="80%"/>
+<br />
+<br />
+       
+       
+<!--Observe the wiped disk:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-
+--!>
 <!--
  ```diff
 - text in red
