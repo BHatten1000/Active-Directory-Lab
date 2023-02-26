@@ -3,6 +3,12 @@
  ### [Preview Screenshots]
 
 <p align="center">
+Diagram of the finished lab: <br/>
+<img src="https://i.imgur.com/BDsajz3.png" width="80%" alt="Screenshot_of_Script"/>
+<br />
+<br />
+ 
+<p align="center">
 The script that was utilized to create users: <br/>
 <img src="https://i.imgur.com/l3ojy6T.png" height="80%" width="80%" alt="Screenshot_of_Script"/>
 <br />
@@ -17,6 +23,9 @@ This project consists of Creating a virtual environment that runs Active Directo
 
 - <b>PowerShell</b> 
 - <b>Virtual Box</b>
+- <b>IP Addressing</b>
+- <b>NAT Configuration</b>
+- <b>AD Users & Computers</b>
 
 <h2>Environments Used </h2>
 
