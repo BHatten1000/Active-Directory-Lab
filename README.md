@@ -118,11 +118,15 @@ Setup DHCP on Domain Controller(to give client machines IP addresses):  <br/>
    - In the DHCP configuration menu right click on 'IPv4' and select 'New Scope' then name and define your scope. These IP addresses represent the available addresses for any host machines that you add to your test enviornment in the future.
    - Define exlusions (if you have any) and lease duration
     
+   <p align="center">
+    
  <img src="https://i.imgur.com/eLK8ZMi.png" height="80%" width="80%"/>
     
  <img src="https://i.imgur.com/tTSG2oD.png" height="80%" width="80%"/>
     
    - When prompted select 'Yes, I want to configure these options now' and proceed to specify the default gateway (in our case this is the DC's IP address), DNS servers, and Domain name as shown below:
+    
+   <p align="center">
     
  <img src="https://i.imgur.com/4CmGcpr.png" height="80%" width="80%"/>
 <br />
@@ -136,6 +140,8 @@ Finally, Powershell to create 1000 users: <br/>
    - Remember to download the txt file of randomly generated names located [here](https://github.com/BHatten1000/Active-Directory-Lab/blob/main/names.txt) or utilize a file of your own in the same format called names.txt 
     
    - After configuring and running the script linked above (from the directory that names.txt is stored in) you should have a large userbase to experiment with:
+    
+   <p align="center">
 
  <img src="https://i.imgur.com/bGL1VLn.png" height="80%" width="80%"/>
 <br />
