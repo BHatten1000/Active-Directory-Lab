@@ -149,10 +149,16 @@ Create a client machine: <br/>
   - Return to Virtual Box and spin up another machine to act as a client in our virtual AD enviornment. You will need an ISO of the OS that you are planning on using. I used windows 10 Pro.
   - Name the client whatever you prefer; I used 'Client1'. Make your OS selection and allocate resources.
   - Configure this VM's NIC to the 'Internal Network Adapter' setting to mimic a corporate domain.
-  - Be sure not to install the home edition of windows, you cannot domain join that version of the OS.
+  - Be sure not to install the home edition of windows, you cannot domain join that version of the OS. 
+  - Once your client VM is created go ahead and domain join it and change its name to match the name you created in virtualbox.
     
   <p align="center">
+Internal NIC configuration, IPconfig output on the Client machine, and domain joining:
   <img src="https://i.imgur.com/YUDEoiZ.png" height="80%" width="80%"/>
+  
+  <img src="https://i.imgur.com/8T7tLXI.png" height="80%" width="80%"/>
+   
+  <img src="https://i.imgur.com/yjc5EOt.png" height="80%" width="80%"/>
     
     
 <br />
