@@ -140,6 +140,23 @@ Finally, Powershell to create 1000 users: <br/>
  <img src="https://i.imgur.com/bGL1VLn.png" height="80%" width="80%"/>
 <br />
 <br />
+    
+   <p align="center">
+Create a client machine: <br/>
+     
+  <img src="https://i.imgur.com/Sqw0YkQ.png" height="80%" width="80%"/>
+    
+  - Return to Virtual Box and spin up another machine to act as a client in our virtual AD enviornment. You will need an ISO of the OS that you are planning on using. I used windows 10 Pro.
+  - Name the client whatever you prefer; I used 'Client1'. Make your OS selection and allocate resources.
+  - Configure this VM's NIC to the 'Internal Network Adapter' setting to mimic a corporate domain.
+  - Be sure not to install the home edition of windows, you cannot domain join that version of the OS.
+    
+  <p align="center">
+  <img src="https://i.imgur.com/YUDEoiZ.png" height="80%" width="80%"/>
+    
+    
+<br />
+<br />
        
        
 <!--Observe the wiped disk:  <br/>
